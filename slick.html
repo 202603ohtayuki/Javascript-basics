@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--1.slick専用のテーマライブラリー（パターン）ファイル-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <!--2．jQueryの設定ファイル-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!--3.外部のCSS（自分で書いたCSS <slickは関係ない> ）を読み込む-->
+   <link rel="stylesheet" href="./slick.css">
+    <!--4.slickの設定ファイル-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<h1>slick スライダー</h1>  
+
+ <div class="slider">
+        <div class="slide-item"><img src="https://picsum.photos/id/1015/800/300" alt="slide1"></div>
+        <div class="slide-item"> <img src="https://picsum.photos/id/1016/800/300" alt="slide2"></div>
+        <div class="slide-item"><img src="https://picsum.photos/id/1018/800/300" alt="slide3"></div>
+    </div>
+
+    <script>
+        $(function(){
+$(".slider").slick({
+    autoplay:true,
+    autoplaySpeed: 2000,
+    arrows:true,
+    dots:true,
+    slidesToShow:1,
+    slidesToScroll:1
+})
+        })
+
+
+    </script>
+    
+</body>
+</html>
