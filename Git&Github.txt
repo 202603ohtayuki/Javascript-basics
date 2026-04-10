@@ -1,0 +1,65 @@
+Git & GitHub
+
+＊基本説明＊
+
+＃Git
+Gitというのは、ファイルの変更を記録する為のツールです（仕組み）。
+
+#GitHub
+GitHubはその記録をした内容をネット上で保存したり。他の人と共有したりする場所です（サービス）。
+
+＊用語＊
+
+#repository
+HTML,CSS,JSなど色んなファイルをまとめて管理する箱の名称です。
+
+#local
+自分のパソコンの中です。
+
+#remote
+GitHub上です。
+
+#branch
+repositoryの中に入っているセクション（住所みたい）
+
+*メインコマンド*
+
+初期設定
+
+git init
+#レポジトリーのスタート
+
+git remote add origin https://github.com/ユーザ名/レポジトリー名.git
+＃Github をリモートのレポジトリーに繋ぐ　（最初はGithubを作る）
+
+git branch -M main
+#指定のブランチを選ぶ
+
+git add .
+#コードをgitに追加する（一時保存）
+
+git commit -m "メッセージ"
+#修正の記録　
+
+git push -u origin main
+#全てをgithubにアップします。
+
+
+2回目以降
+
+git add .
+#コードをgitに追加する（一時保存）
+
+git commit -m "メッセージ"
+#修正の記録　
+
+git push -u origin main
+#全てをgithubにアップします。
+
+
+とあるレポジトリーそのままコピーしたい場合は
+git clone リポジトリURL
+
+または
+
+git clone https://github.com/ユーザ名/レポジトリー名.git

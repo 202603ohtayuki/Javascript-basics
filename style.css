@@ -1,0 +1,16 @@
+body{
+            background-color: azure;
+            font-family: sans-serif;
+            margin: auto;
+            padding: 30px;
+            color: #333;
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: green;
+        }
+
+        /* */
+        /* ↑CSS用のコメントアウト */
