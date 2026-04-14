@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./swiper.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>SwiperJs</title>
+
+    </head>
+    <body>
+
+    <h1>swiperスライダー</h1>
+
+
+<div class="swiper">
+
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<img src="https://picsum.photos/id/1015/800/300" alt="slide1">
+</div>
+<div class="swiper-slide">
+<img src="https://picsum.photos/id/1016/800/300" alt="slide2">
+</div>
+<div class="swiper-slide">
+<img src="https://picsum.photos/id/1018/800/300" alt="slide3">
+</div>
+</div>
+
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
+
+
+</div>
+
+
+    <script>
+$(function(){
+const swiper = new Swiper(".swiper",{
+    loop:true,
+    autoplay:{
+        delay:2000,
+    },
+    pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+    },
+    navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev"
+    }
+})
+
+})
+
+    </script>
+
+    
+</body>
+</html>

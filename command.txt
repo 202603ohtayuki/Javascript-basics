@@ -1,0 +1,33 @@
+cd　移動するためのコマンド
+
+cd test.html  # testテストというファイルに移動する
+cd ~/  #ホームディレクトリに移動する
+cd ..  #一つ上の階層のファイルに移動する
+
+touch コマンド（mac & linux)　ファイル作成
+ni (windows)
+
+touch test.html style.css  #test.htmlという中身が空のファイルを作る
+
+ni test.html,style.css カンマを入れる
+
+mkdir コマンド　フォルダ作成
+
+mkdir test #testというフォルダーを作る
+
+cp コマンド　ファイルを複製コマンド
+
+cp test.html tmp/  #test.htmlを相対パスでtmp/というディレクトリの中にコピーする
+cp test.html test2.html  #test.htmlをtest2.htmlという名前でコピーする
+cp −r dir /tmp/  #dirというディレクトリとその中身を絶対パスで/tmp/にそっくりコピーする
+
+
+rm コマンド　削除
+
+rm test.html  #test.htmlを削除する
+rm -r test  #testというディレクトリとその中身を削除する
+
+
+ls コマンド　パスの確認のコマンド
+
+ls  #現在のディレクトリにあるファイルやディレクトリを表示する
